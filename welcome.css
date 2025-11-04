@@ -1,0 +1,172 @@
+body.welcome-bg {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: url('Images/Background 3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+
+
+/* HEADER & NAVBAR */
+.welcome-nav {
+  background: rgba(3, 20, 7, 0.97);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 7vw 18px 7vw;
+  box-shadow: 0 2px 14px 0 rgba(1, 28, 19, 0.16);
+  border-bottom: 1.5px solid #012518;
+}
+
+.logo {
+  background: transparent;
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(15, 75, 43, 0.14);
+}
+.logo img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+
+.welcome-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-nav ul li a {
+  color: #4f9c6a;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: .2px;
+  padding: 2px 9px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background .23s, color .23s;
+}
+.welcome-nav ul li a:hover, 
+.welcome-nav ul li a:focus {
+  color: #0a2412;
+  background: #4f6f57;
+}
+
+/* Call to Action Button */
+.get-started-btn {
+  background: linear-gradient(90deg,#4e7f60,#509671);
+  color: #06230f;
+  padding: 11px 30px;
+  border-radius: 19px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 16px rgba(65, 86, 70, 0.18);
+  text-shadow: 0 1px 10px #07642077, 0 0.5px 6px #44855a2c;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .25s, color .25s, box-shadow .24s;
+}
+.get-started-btn:hover {
+  background: #031a0a;
+  color: #59926c;
+  box-shadow: 0 4px 24px #56986455;
+}
+
+/* HERO GLASS CARD */
+.welcome-hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  margin-top: 56px;
+}
+
+.hero-content {
+ background: rgba(1, 12, 8, 0.23); /* Sage glassy color, slight transparency */
+  backdrop-filter: blur(12px); /* Glassmorphism blur */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-radius: 36px;
+  box-shadow: 0 18px 48px rgba(3, 16, 10, 0.18), 0 1.5px 8px #01090433;
+  padding: 56px 42px 60px 42px;
+  text-align: center;
+  max-width: 520px;
+  width: 100vw;
+  border: 2px solid #041409b4;
+  position: relative;
+}
+
+.hero-content h1 {
+  color: #6fa97f;
+  font-size: 2.65rem;
+  font-weight: 700;
+  text-shadow: 0 1px 3px #02411444;
+  margin-bottom: 22px;
+  letter-spacing: 1.5px;
+}
+
+
+#type-effect {
+  font-size: 1.17rem;
+  color: #70b488;
+  font-family: inherit;
+  letter-spacing: .03rem;
+  white-space: pre-line;
+  position: relative;
+}
+#type-effect::after {
+  content: "|";
+  animation: blink 1s steps(1) infinite;
+  margin-left: 2px;
+  color: #5eaf84;
+  font-weight: bold;
+   margin-bottom: 18px;
+  
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+.info-btn {
+  background: (90deg,#08110c,#000b06 80%);
+  color: #53906f;
+  border: none;
+margin-top: 50px; 
+  border-radius: 20px;
+  padding: 12px 44px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  box-shadow: 0 2.5px 18px rgba(72, 107, 87, 0.13), 0 1.5px 6px #2c4d2ba5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .23s, color .23s, box-shadow .23s;
+}
+.info-btn:hover, .info-btn:focus {
+  background: #638d6d;
+  color: #03170d;
+  box-shadow: 0 4px 22px #0109037d;
+}
+
+/* FOOTER */
+footer .byline {
+  background: #031a09;
+  margin-top: 36px;
+  text-align: center;
+  color: #6f9f72;
+  padding: 20px 0 18px 0;
+  font-size: 1.08rem;
+  border-top: 1.5px solid #011a09;
+  letter-spacing: .7px;
+  font-family: 'Poppins', Arial, sans-serif;
+}

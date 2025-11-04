@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serve Them Fresh | Welcome</title>
+ <link rel="stylesheet" href="welcome.css">
+
+</head>
+<body class="welcome-bg">
+    <div class="overlay"></div>
+  <header>
+    <nav class="welcome-nav">
+     <div class="logo">
+<img src="Images/logo.jpg" alt="Serve Them Fresh Logo" style="height:30px;vertical-align:middle;">
+
+
+</div>
+
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="courses.html">Course</a></li>
+  <li><a href="pricing.html">Pricing</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+   <a href="login.html" class="get-started-btn">Get Started</a>
+
+    </nav>
+  </header>
+  <main>
+    <section class="welcome-hero">
+
+
+      <div class="hero-content">
+        <h1>WELCOME</h1>
+     
+  <p>
+    <span id="type-effect"></span>
+  </p>
+  <br><br>
+        <p><a class="info-btn" href="#">More Info</a></p>
+        
+      </div>
+    </section>
+  </main> 
+  <footer>
+    <p class="byline">~designed by Serve Them Fresh~</p>
+  </footer>
+  <script>
+  const text = "Welcome to Serve Them Fresh! Explore nature’s goodness, fresh fruits, healthy living, and vibrant recipes—follow and discover our carefully curated selections.";
+  const speed = 46; // Typing speed in ms per character
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("type-effect").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  window.onload = typeWriter;
+</script>
+
+</body>
+</html>
